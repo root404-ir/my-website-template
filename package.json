@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./build/css/output.css --watch"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "hover.css": "^2.3.2"
+  }
+}
