@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css">
 </head>
 
-<body class="bg-black text-white" data-spy="scroll" data-target="#nav">
+<body class="bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-300" data-spy="scroll" data-target="#nav">
     <div id="preloader">
         <div id="status"></div>
     </div>
     <div class="menu_hide_responsive -z-50 lg:hidden">
         <div
-            class="contact_info_responsive flex flex-row justify-between border-x border-x-2 border-x-black bg-yellow-400 p-4 lg:hidden rounded-lg z-50">
+            class="contact_info_responsive flex flex-row justify-between border-x border-x-2 border-x-black bg-purple-500 dark:bg-yellow-400 text-gray-800 p-4 lg:hidden rounded-lg z-50">
             <a href="https://t.me/root404" target="_blank"
                 class="font-medium transition-all flex justify-center items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-telegram"
@@ -62,7 +62,8 @@
     <section class="container px-2.5 mx-auto www">
         <div id="goTo-top" class="goTo-top d-none">
             <a href="#nav">
-                <button class="bg-yellow-400 p-4 text-gray-200 rounded-lg text-center animate animate-bounce">
+                <button
+                    class="bg-purple-500 dark:bg-yellow-400 p-4 text-gray-200 rounded-lg text-center animate animate-bounce">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                         <path
@@ -71,12 +72,12 @@
                 </button>
             </a>
         </div>
-        <div id="#particles-js"></div>
+        <div class=" circle_background circle_background_1"></div>
+        <div class=" circle_background circle_background_2"></div>
         <nav id="nav"
-            class=" text-white dd text-center p-6  rounded-lg border-y border-y-2 border-y-yellow-400 my-10 mx-auto flex justify-around relative">
-            <div class=" circle_background circle_background_1"></div>
-            <div class=" circle_background circle_background_2"></div>
-            <div id="menu_hidden" class="absolute -bottom-52 left-52 d-none z-10 bg-yellow-400 rounded-lg">
+            class=" text-gray-800 dark:text-gray-300 dd text-center p-6  rounded-lg border-y border-y-2 border-y-purple-700 dark:border-y-yellow-400 my-10 mx-auto flex justify-around relative">
+            <div id="menu_hidden"
+                class="absolute -bottom-52 left-52 d-none z-10 bg-purple-300 dark:bg-yellow-400 rounded-lg">
                 <div class="flex flex-col border-x border-x-4 border-x-white p-4 rounded-lg leading-10 w-72">
                     <a href="https://t.me/root404" target="_blank"
                         class="font-medium text-gray-700 transition-all hover:text-gray-900 flex justify-center items-center gap-3">
@@ -118,15 +119,15 @@
                 </div>
             </div>
             <div class="menu_responsive_icon flex lg:hidden items-center cursor-pointer">
-                <div id="icon_off">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#facc15"
+                <div id="icon_off" class="text-purple-500 dark:text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-toggle-off" viewBox="0 0 16 16">
                         <path
                             d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5" />
                     </svg>
                 </div>
-                <div id="icon_on" class="d-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#facc15"
+                <div id="icon_on" class="d-none text-purple-500 dark:text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-toggle-on" viewBox="0 0 16 16">
                         <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8" />
                     </svg>
@@ -134,25 +135,26 @@
             </div>
             <div class="logo">
                 <a href="#">
-                    <h2 class="font-bold text-lg hover:hover:text-yellow-400">mohammad tafaghodi</h2>
+                    <h2 class="font-bold text-lg hover:text-purple-500 dark:hover:hover:text-yellow-400">mohammad
+                        tafaghodi</h2>
                 </a>
             </div>
             <ul class="hidden lg:flex gap-5">
                 <li id="aboutMe" class="flex items-center gap-2 hvr-underline-reveal ">
                     <a href="#about_me_section" id="shop"
-                        class="smooth-scroll font-medium hover:hover:text-yellow-400 transition-allhover:text-gray-900  flex items-center gap-2">درباره
+                        class="smooth-scroll font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-allhover:text-gray-900  flex items-center gap-2">درباره
                         من
                     </a>
                 </li>
                 <li class="flex items-center gap-2 hvr-underline-reveal">
                     <a href="#my-skill"
-                        class="smooth-scroll font-medium hover:hover:text-yellow-400  transition-all hover:text-gray-900 flex items-center gap-2">مهارت
+                        class="smooth-scroll font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400  transition-all hover:text-gray-900 flex items-center gap-2">مهارت
                         های من
                     </a>
                 </li>
                 <li class="contact flex items-center gap-2 hvr-underline-reveal">
                     <a href="#" id="contact_me"
-                        class="smooth-scroll font-medium hover:hover:text-yellow-400 transition-all flex items-center gap-2">تماس
+                        class="smooth-scroll font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-all flex items-center gap-2">تماس
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             id="bottom_svg" class="bi bi-caret-left" viewBox="0 0 16 16">
                             <path
@@ -166,23 +168,36 @@
                     </a>
                 </li>
                 <li id="blog" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#"
-                        class="smooth-scroll font-medium hover:hover:text-yellow-400 transition-all flex items-center gap-2">وبلاگ</a>
+                    <a id="blog_open" target="_blank"
+                        class="cursor-pointer font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-all flex items-center gap-2">وبلاگ</a>
                 </li>
             </ul>
-            <a id="telegram" class="telegram flex items-center float-left">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#facc15" class="bi bi-telegram"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
-                </svg>
-            </a>
+            <div class="dark-light-mode flex items-center">
+                <div id="dark-mode-icon" class="d-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-moon-stars dark:text-white text-black" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                        <path
+                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                    </svg>
+                </div>
+                <div id="light-mode-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-brightness-high dark:text-white text-black" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                </div>
+            </div>
         </nav>
+        <span id="time" class="text-gray-800 dark:text-white"></span>
         <div id="welcome_box" class="lg:flex justify-center w-full relative hidden">
             <audio id="welcome_alert_sound">
                 <source src="./music/mixkit-correct-answer-tone-2870.wav" type="audio/wav">
             </audio>
-            <div class="welcome_alert rounded-lg text-gray-800 border-b border-b-4 border-b-gray-500">
+            <div
+                class="welcome_alert bg-purple-300 dark:bg-yellow-400  rounded-lg text-gray-800 border-b border-b-4 border-b-gray-800 dark:border-b-gray-500">
                 <div class="close_welcome_alert">
                     <span class="font-light text-sm">بستن</span>
                 </div>
@@ -212,7 +227,8 @@
         </div>
 
         <div id="welcome_box_responsive" class="flex lg:hidden justify-center w-full relative">
-            <div class="welcome_alert rounded-lg text-gray-800 border-b border-b-4 border-b-gray-500">
+            <div
+                class="welcome_alert rounded-lg bg-purple-300 dark:bg-yellow-400 text-gray-800 border-b border-b-4 border-b-gray-500">
                 <div class="close_welcome_alert">
                     <span class="font-light text-s">بستن</span>
                 </div>
@@ -242,29 +258,32 @@
         </div>
         <div id="menu_toggle_responsive" class="d-none">
             <ul
-                class="flex flex-col lg:hidden justify-center items-center z-50 gap-5 absolute top-32 right-24 bg-yellow-400 text-gray-800 p-5 rounded-lg w-2/4">
+                class="flex flex-col lg:hidden justify-center items-center z-50 gap-5 absolute top-32 right-24 bg-purple-500 dark:bg-yellow-400 text-gray-800 p-5 rounded-lg w-2/4">
                 <li id="aboutMe" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#" id="shop" class="font-medium transition-all flex items-center gap-2">درباره
+                    <a href="#about_me_section" id="shop"
+                        class="smooth-scroll font-medium transition-all flex items-center gap-2">درباره
                         من
                     </a>
                 </li>
                 <li id="portfolio" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#" class="font-medium transition-all flex items-center gap-2">نمونه
-                        کارها </a>
+                    <a href="#my-skill" class="smooth-scroll font-medium transition-all flex items-center gap-2">
+                        مهارت های من </a>
                 </li>
                 <li id="blog" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#" class="font-medium transition-all flex items-center gap-2">وبلاگ</a>
+                    <a href="https://front-code.ir" target="_blank"
+                        class="font-medium transition-all flex items-center gap-2">وبلاگ</a>
                 </li>
             </ul>
         </div>
         <header>
             <section class="main_header flex gap-10 justify-between flex-col lg:flex-row items-center">
-                <div class="main_header_right rounded-lg">
+                <div class="main_header_right rounded-lg ">
                     <audio id="hoverSound">
                         <source src="./music/mixkit-soap-bubble-sound-2925.wav" type="audio/wav">
                     </audio>
-                    <div class="header_content w-full border-y border-y-4 border-y-yellow-400 rounded-lg p-4">
-                        <h3 id="typing_text" class="mb-4 font-bold text-2xl text-yellow-400">
+                    <div
+                        class="header_content w-full bg-white dark:bg-black border-y border-y-4 border-y-purple-500 dark:border-y-yellow-400 rounded-lg p-4">
+                        <h3 id="typing_text" class="mb-4 font-bold text-2xl text-purple-500 dark:text-yellow-400">
                             توضیحات
                             مختصری از خودم</h3>
                         <audio id="typingSound">
@@ -272,13 +291,13 @@
                                 src="../music/Keyboard Typing Sound _ Free Sound Effects _ Home and Office Sounds.mp3"
                                 type="audio/mp3">
                         </audio>
-                        <p id="typing_text_header" class="leading-9 text-lg"></p>
+                        <p id="typing_text_header" class="leading-9 text-lg text-gray-800 dark:text-gray-300"></p>
                         <div class="social_header_btn flex justify-around items-center mt-5">
                             <button id="myGitHub"
-                                class="myGitHub text-yellow-400 border rounded-xl border-yellow-400 py-2 px-4 hover:bg-yellow-500 hover:text-gray-800 transition-all font-bold">گیت
+                                class="myGitHub border rounded-xl border-purple-500 dark:border-yellow-400 py-2 px-4 hover:bg-purple-300 dark:hover:bg-yellow-500 hover:text-gray-800 transition-all font-bold">گیت
                                 هاب من</button>
                             <button id="my_resume"
-                                class="myResume text-yellow-400 border rounded-xl border-yellow-400 py-2 px-4 hover:bg-yellow-500 hover:text-gray-800 transition-all font-bold">رزومه
+                                class="myResume  border rounded-xl border-purple-500 dark:border-yellow-400 py-2 px-4 hover:bg-purple-300 dark:hover:bg-yellow-500 hover:text-gray-800 transition-all font-bold">رزومه
                                 من</button>
                         </div>
                     </div>
@@ -307,7 +326,11 @@
                     <img src="./img/JavaScript-Blog-Cover.svg" alt="">
                 </div>
             </div>
-            <div id="my-skill" class="skill_progress_bar mt-20 border border-yellow-400 p-6 rounded-lg ">
+            <div id="my-skill"
+                class="skill_progress_bar mt-20 border border-purple-500 dark:border-yellow-400 p-6 rounded-lg relative">
+                <div class="box_skill bg-orange-600"></div>
+                <div class="box_skill_2 bg-fuchsia-700"></div>
+                <div class="box_skill_3 "></div>
                 <div class="leading-10">
                     <div class="skill-title mb-20">
                         <h3 id="mySkill" class="font-bold text-3xl">مهارت های من</h3>
@@ -317,7 +340,7 @@
                     </div>
                 </div>
                 <div class="w-full bg-gray-400 rounded-full">
-                    <div class="progress_bar bg-yellow-400 w-11/12 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                    <div class="progress_bar bg-purple-500 dark:bg-yellow-400 w-11/12 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                         aria-valuenow="90" style="width: 0%;">
                         <span>90%</span>
                     </div>
@@ -327,7 +350,7 @@
                         <span class="text-lg font-bold">css</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar progress_bar bg-yellow-400 w-4/5 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar progress_bar bg-purple-500 dark:bg-yellow-400 w-4/5 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="80" style="width: 0%;">
                             <span>80%</span>
                         </div>
@@ -338,7 +361,7 @@
                         <span class="text-lg font-bold">BootStrap</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar bg-yellow-400 w-4/5 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar bg-purple-500 dark:bg-yellow-400 w-4/5 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="80" style="width: 0%;">
                             <span>80%</span>
                         </div>
@@ -349,7 +372,7 @@
                         <span class="text-lg font-bold">jquery</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar bg-yellow-400 w-3/6 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar bg-purple-500 dark:bg-yellow-400 w-3/6 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="70" style="width: 0%;">
                             <span>70%</span>
                         </div>
@@ -360,7 +383,7 @@
                         <span class="text-lg font-bold">JavaScript</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar bg-yellow-400  w-3/5 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar bg-purple-500 dark:bg-yellow-400  w-3/5 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="60" style="width: 0%;">
                             <span>60%</span>
                         </div>
@@ -371,7 +394,7 @@
                         <span class="text-lg font-bold">tailwind css</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar bg-yellow-400 w-3/6 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar bg-purple-500 dark:bg-yellow-400 w-3/6 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="50" style="width: 0%;">
                             <span>50%</span>
                         </div>
@@ -382,7 +405,7 @@
                         <span class="text-lg font-bold">React Js</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar bg-yellow-400 w-4/12 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar bg-purple-500 dark:bg-yellow-400 w-4/12 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="30" style="width: 0%;">
                             <span>30%</span>
                         </div>
@@ -393,7 +416,7 @@
                         <span class="text-lg font-bold">linux</span>
                     </div>
                     <div class="w-full bg-gray-400 rounded-full">
-                        <div class="progress_bar bg-yellow-400 w-4/12 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
+                        <div class="progress_bar bg-purple-500 dark:bg-yellow-400 w-4/12 text-xl font-medium text-gray-800 text-center p-px leading-none rounded-full"
                             aria-valuenow="30" style="width: 0%;">
                             <span>30%</span>
                         </div>
@@ -401,12 +424,13 @@
                 </div>
             </div>
             <section id="about_me_section"
-                class="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full">
+                class="flex flex-col lg:flex-row items-center lg:items-start justify-between w-full relative">
+                <div class="about-me__skill"></div>
                 <div class="mt-10 flex flex-col items-center w-full lg:cdcd mb-10 ">
                     <h2 class="text-3xl font-bold">درباره من</h2>
-                    <div class="icon_info mt-4 animate animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#facc15"
-                            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <div class="icon_info mt-4 animate animate-bounce text-purple-500 dark:text-yellow-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor
+                            class=" bi bi-arrow-down-circle" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
                         </svg>
@@ -420,7 +444,11 @@
                             زیادی از برنامه نویسی وب نمیدونم و دارم هرروز آموزش میبینم و مهارت هامو تقویت میکنم</p>
                     </div>
                 </div>
-                <div class="w-full lg:ww shadow shadow-xl shadow-yellow-400  bg-yellow-400 rounded-lg">
+                <button id="reload_page"
+                    class="hidden lg:inline-block bg-purple-600 dark:bg-yellow-400 text-white dark:text-gray-700 py-2 px-3 rounded-lg fixed bottom-[20px] left-[20px]">ریلود
+                    صفحه</button>
+                <div
+                    class="w-full lg:ww shadow shadow-xl shadow-purple-500 dark:shadow-yellow-400 bg-purple-500 dark:bg-yellow-400 rounded-lg">
                     <img src="img/Green Teal Geometric Modern Computer Programmer Code Editor Quotes Instagram Post.png"
                         alt="">
                 </div>
@@ -428,7 +456,7 @@
         </main>
     </section>
     <footer id="footer">
-        <div class="footer-container">
+        <div class="footer-container bg-blue-950 text-gray-300">
             <div class="footer-section">
                 <div class="footer-title">
                     <span>mohammad tafaghodi (root404) &copy;</span>

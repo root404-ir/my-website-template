@@ -54,7 +54,7 @@ body {
     font-style: normal;
 }
 
-.telegram {
+.dark-light-mode {
     cursor: pointer;
 }
 
@@ -147,16 +147,11 @@ body {
 .welcome_alert {
     width: 500px;
     height: 100px;
-    background-color: var(--color_FACC15);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-}
-
-.welcome_alert_purple {
-    background-color: var(--color_9333EA);
 }
 
 #welcome_box {
@@ -183,6 +178,91 @@ body {
     bottom: 0px;
     width: 100%;
     height: 50px;
+}
+
+.box_skill {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    transform: rotate(120deg);
+    border: 2px solid gray;
+    box-shadow: 0 0 20px orangered;
+    opacity: 0.7;
+    left: 3rem;
+    filter: blur(8px);
+    animation: skill_box 4s infinite;
+}
+
+.box_skill_2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    transform: rotate(120deg);
+    border: 2px solid gray;
+    box-shadow: 0 0 20px #a21caf;
+    opacity: 0.7;
+    right: 3rem;
+    opacity: 0.5;
+    bottom: 0;
+    filter: blur(10px);
+    animation: skill_box_2 4s infinite;
+}
+
+.box_skill_3 {
+    width: 100px;
+    height: 800px;
+    position: absolute;
+    background: radial-gradient(circle, rgba(184, 63, 251, 1) 0%, rgba(70, 249, 252, 1) 100%);
+    left: 50%;
+    bottom: 0;
+    transform: rotate(30deg);
+    filter: blur(50px);
+    z-index: -3;
+    opacity: 0.6;
+    border-radius: 100px;
+}
+.about-me__skill
+{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: linear-gradient(97deg, rgba(184,63,251,1) 0%, rgba(70,249,252,1) 100%);
+    transform: rotate(-40deg);
+    filter: blur(30px);
+    opacity: 0.6;
+    border-radius: 20px;
+    z-index: -1;
+}
+@keyframes skill_box {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
+@keyframes skill_box_2 {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(120deg);
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -304,7 +384,6 @@ body {
 .footer-container {
     margin-top: 40px;
     display: flex;
-    background-color: #110A4C;
     flex-direction: column;
     align-items: center;
     justify-content: center;

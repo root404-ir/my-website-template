@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('#image-carousel').owlCarousel({
         item: 4,
@@ -53,7 +52,7 @@ $(document).ready(function () {
     $('.close_welcome_alert').click(() => {
         $('#welcome_box').fadeOut()
         $('#welcome_box_responsive').fadeOut()
-        $('.main_header').animate({ 'margin-top': '-64px' })
+        $('.main_header').animate({ 'margin-top': '-20px' })
     })
     $('.close_welcome_alert_purple').click(() => {
         $('#welcome_box_purple').fadeOut()
@@ -80,6 +79,26 @@ $(document).ready(function () {
         window.open('https://t.me/root404', '_blank')
     })
 
+    // بررسی وضعیت دارک مود و آیکون‌ها هنگام بارگذاری صفحه
+    let darkMode = localStorage.getItem("dark-mode");
+    if (darkMode === "enabled") {
+        $('html').addClass('dark');
+        $('#light-mode-icon').addClass('d-none');
+        $('#dark-mode-icon').removeClass('d-none');
+    } else {
+        $('#light-mode-icon').removeClass('d-none');
+        $('#dark-mode-icon').addClass('d-none');
+    }
+    // تغییر وضعیت دارک مود و آیکون‌ها با کلیک بر روی دکمه
+    $('.dark-light-mode').click(() => {
+        $('#light-mode-icon').slideToggle().toggleClass('d-none');
+        $('html').toggleClass('dark');
+        $('#dark-mode-icon').slideToggle().toggleClass('d-none');
+
+        // ذخیره وضعیت دارک مود و آیکون‌ها در localStorage
+        darkMode = $('html').hasClass('dark') ? "enabled" : "disabled";
+        localStorage.setItem("dark-mode", darkMode);
+    });
 });
 $(function () {
     $('.skill_progress_bar').waypoint(
@@ -97,9 +116,6 @@ $(function () {
     }
 
 })
-let telegram = document.getElementById('telegram').addEventListener('click', () => {
-    window.open('https://t.me/root404', '_blank')
-})
 let welcome_box = document.getElementById('welcome_box')
 let welcome_alert_sound = document.getElementById('welcome_alert_sound')
 let typeSound = document.getElementById('typingSound')
@@ -108,16 +124,11 @@ window.addEventListener('load', () => {
     welcome_box.style.transform = 'translateY(0px)'
     welcome_box.style.transition = '1s transform'
     $('#preloader').fadeOut()
-    this.setTimeout(playSound, 500)
     typingHeader()
     typeSoundPlay()
 })
-function playSound() {
-    welcome_alert_sound.currentTime = 0
-    welcome_alert_sound.play()
-}
 let i = 0
-let txt_header = "من محمد تفقدی صفرپور هستم برنامه نویس و توسعه دهنده فرانت اند متولد 1382/02/19 در تهران این یک صغحه کوچک و ساده جهت معرفی خودم است. "
+let txt_header = "من محمد تفقدی صفرپور هستم برنامه نویس و توسعه دهنده فرانت اند متولد 1382/02/19 در تهران این یک صفحه کوچک و ساده جهت معرفی خودم است. "
 function typingHeader() {
     if (i < txt_header.length) {
         document.getElementById("typing_text_header").innerHTML += txt_header.charAt(i)
@@ -141,4 +152,30 @@ $(function () {
             $('#goTo-top').addClass('d-none')
         }
     })
+})
+
+const Time = () => {
+    let ShowTime = new Date().toLocaleTimeString()
+    document.getElementById('time').innerHTML = ShowTime
+}
+setInterval(() => {
+    Time()
+}, 1000)
+
+let reload_page = document.getElementById('reload_page')
+reload_page.addEventListener('click', () => {
+    location.reload()
+})
+
+let docTitle = document.title
+window.addEventListener('blur', () => {
+    document.title = "برگرد لطفا🥲"
+})
+window.addEventListener('focus', () => {
+    document.title = docTitle
+})
+const windowOpenFeatures = 'left=100,height=100,width=1100px,height=600px'
+const blogBtn = document.getElementById('blog_open')
+blogBtn.addEventListener('click', () => {
+    window.open('https://front-code.ir', '_blank', windowOpenFeatures)
 })
