@@ -49,15 +49,6 @@ $(document).ready(function () {
     myGitHub.mouseleave(() => {
         hoverSound.currentTime = 1
     })
-    $('.close_welcome_alert').click(() => {
-        $('#welcome_box').fadeOut()
-        $('#welcome_box_responsive').fadeOut()
-        $('.main_header').animate({ 'margin-top': '-20px' })
-    })
-    $('.close_welcome_alert_purple').click(() => {
-        $('#welcome_box_purple').fadeOut()
-        $('#welcome_box_responsive_purple').fadeOut()
-    })
     let checked_clipboard = $('.check_clipboard')
     let copy_phone_number = $('.copy_phone_number').click(() => {
         navigator.clipboard.writeText('09306136838')
@@ -99,6 +90,12 @@ $(document).ready(function () {
         darkMode = $('html').hasClass('dark') ? "enabled" : "disabled";
         localStorage.setItem("dark-mode", darkMode);
     });
+    $('#open-call-box').click(() => {
+        welcome__box.toggleClass('d-none')
+    })
+    let welcome__box = $('#welcome_box').mouseout(() => {
+        welcome__box.toggleClass('d-none')
+    })
 });
 $(function () {
     $('.skill_progress_bar').waypoint(
@@ -120,9 +117,7 @@ let welcome_box = document.getElementById('welcome_box')
 let welcome_alert_sound = document.getElementById('welcome_alert_sound')
 let typeSound = document.getElementById('typingSound')
 window.addEventListener('load', () => {
-    welcome_box.classList.remove('d-none')
-    welcome_box.style.transform = 'translateY(0px)'
-    welcome_box.style.transition = '1s transform'
+
     $('#preloader').fadeOut()
     typingHeader()
     typeSoundPlay()
@@ -153,11 +148,6 @@ $(function () {
         }
     })
 })
-
-const Time = () => {
-    let ShowTime = new Date().toLocaleTimeString()
-    document.getElementById('time').innerHTML = ShowTime
-}
 setInterval(() => {
     Time()
 }, 1000)

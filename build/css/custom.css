@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sofadi+One&display=swap');
+
+/* @import url('./responsive.css'); */
+@font-face {
+    font-family: Sahel;
+    src: url('../fonts/sahel-font-v1.0.0-alpha14/Sahel-Black.eot'),
+        url('../fonts/sahel-font-v1.0.0-alpha14/Sahel-Black.ttf') format('truetype'),
+        url('../fonts/sahel-font-v1.0.0-alpha14/Sahel-Black.woff') format('woff');
+    font-weight: bold;
+}
 
 * {
     padding: 0;
@@ -8,7 +18,7 @@
 }
 
 body {
-    font-family: Vazirmatn !important;
+    font-family: 'Vazirmatn';
     text-align: right;
     direction: rtl;
 }
@@ -24,19 +34,16 @@ body {
     inset: 0;
     z-index: 9999;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 #status {
-    background-image: url('../gif/Infinity@1x-1.0s-200px-200px.gif');
+    background-image: url('../gif/Spin@1x-1.0s-200px-200px.gif');
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
-    position: absolute;
-    right: 40%;
-    top: 40%;
-    margin-top: -35px;
-    margin-left: -35px;
+    margin: 0 auto;
 }
 
 .visibility {
@@ -48,7 +55,7 @@ body {
 }
 
 .logo {
-    font-family: "Playwrite BE VLG", cursive;
+    font-family: "Playwrite CU", cursive;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
@@ -152,12 +159,27 @@ body {
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 50%;
 }
 
-#welcome_box {
-    transform: translateY(-1000px);
+.icon-menu-call
+{
+    position: fixed;
+    left: -0.5rem;
+    top: 50%;
+    cursor: pointer;
 }
-
+#fork_me {
+    position: fixed;
+    transform: rotate(45deg);
+    left: 0;
+    bottom: 4rem;
+    padding: 0.4rem 1rem;
+    z-index: 99999;
+    border-radius: 0.4rem;
+}
 .close_welcome_alert,
 .close_welcome_alert_purple {
     position: absolute;
@@ -210,6 +232,20 @@ body {
     animation: skill_box_2 4s infinite;
 }
 
+.image-header_bg {
+    width: 27%;
+    height: 300px;
+    top: 9rem;
+    left: 7rem;
+    transform: perspective(500px) rotateY(180deg);
+    border: 2px solid gray;
+}
+.main_header_left img {
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+}
+
 .box_skill_3 {
     width: 100px;
     height: 800px;
@@ -223,20 +259,61 @@ body {
     opacity: 0.6;
     border-radius: 100px;
 }
-.about-me__skill
-{
+
+.about-me__skill {
     width: 100px;
     height: 500px;
     position: absolute;
     right: 0;
     top: 40px;
-    background: linear-gradient(97deg, rgba(184,63,251,1) 0%, rgba(70,249,252,1) 100%);
+    background: linear-gradient(97deg, rgba(184, 63, 251, 1) 0%, rgba(70, 249, 252, 1) 100%);
     transform: rotate(-40deg);
     filter: blur(30px);
     opacity: 0.6;
     border-radius: 20px;
     z-index: -1;
 }
+
+.goTo-top {
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+}
+
+.goTo-top button {
+    border-radius: 100%;
+}
+
+.goTo-top button svg {
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+
+.footer-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #51527A;
+}
+
+.footer-section {
+    margin: 20px 0;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: "Sofadi One", system-ui;
+}
+
 @keyframes skill_box {
     0% {
         transform: rotate(120deg);
@@ -270,10 +347,20 @@ body {
         width: 350px;
         height: 100px;
         top: -50px;
+        right: 9rem;
     }
 
     .main_header {
         margin-top: 4rem;
+    }
+
+    .image-header_bg {
+        display: none;
+    }
+
+    .main_header_left img {
+        height: 100px;
+        width: 100% !important;
     }
 
     .contact_info_responsive {
@@ -288,7 +375,7 @@ body {
 
     .main_header_right,
     .main_header_left {
-        max-width: 100%;
+        width: 100% !important;
     }
 }
 
@@ -364,40 +451,4 @@ body {
     .social_header_btn button {
         width: 100%;
     }
-}
-
-.goTo-top {
-    position: fixed;
-    bottom: 0;
-    z-index: 10000;
-}
-
-.goTo-top button {
-    border-radius: 100%;
-}
-
-.goTo-top button svg {
-    color: rgb(0, 0, 0);
-    transform: scale(1.2);
-}
-
-.footer-container {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid #51527A;
-}
-
-.footer-section {
-    margin: 20px 0;
-}
-
-.footer-title {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    justify-content: center;
-    align-items: center;
 }
