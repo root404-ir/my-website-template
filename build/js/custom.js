@@ -113,6 +113,7 @@ $(function () {
     }
 
 })
+
 let welcome_box = document.getElementById('welcome_box')
 let welcome_alert_sound = document.getElementById('welcome_alert_sound')
 let typeSound = document.getElementById('typingSound')
@@ -152,11 +153,6 @@ setInterval(() => {
     Time()
 }, 1000)
 
-let reload_page = document.getElementById('reload_page')
-reload_page.addEventListener('click', () => {
-    location.reload()
-})
-
 let docTitle = document.title
 window.addEventListener('blur', () => {
     document.title = "برگرد لطفا🥲"
@@ -169,3 +165,24 @@ const blogBtn = document.getElementById('blog_open')
 blogBtn.addEventListener('click', () => {
     window.open('https://front-code.ir', '_blank', windowOpenFeatures)
 })
+
+const downloadBtn = document.getElementById('my_resume');
+
+downloadBtn.addEventListener('click', function () {
+    // آدرس فایل PDF که می‌خواهید دانلود کنید
+    const pdfUrl = 'https://mohammad.fun/resume/MyResume.pdf';
+
+    // ساخت عنصر لینک
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+
+    // نام فایل دانلود
+    link.download = 'Resume.pdf';
+
+    // اضافه کردن لینک به سند و کلیک کردن روی آن
+    document.body.appendChild(link);
+    link.click();
+
+    // حذف لینک بعد از کلیک
+    document.body.removeChild(link);
+});
