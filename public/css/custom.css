@@ -21,8 +21,10 @@ body {
     font-family: 'Vazirmatn';
     text-align: right;
     direction: rtl;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url('../img/output-onlinepngtools.png');
 }
-
 :root {
     --color_FACC15: #facc15;
     --color_9333EA: #9333ea
