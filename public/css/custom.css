@@ -25,9 +25,11 @@ body {
     position: relative;
     background-image: url('../img/output-onlinepngtools.png');
 }
+
 :root {
     --color_FACC15: #facc15;
-    --color_9333EA: #9333ea
+    --color_9333EA: #9333ea;
+    --blue_color: #4249ed;
 }
 
 #preloader {
@@ -315,6 +317,41 @@ body {
 
 .title {
     font-family: "Sofadi One", system-ui;
+}
+
+#toggle-btn,
+.corner-menu a {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.corner-menu a {
+    background-color: var(--color_FACC15);
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    color: var(--color_9333EA);
+    text-decoration: none;
+    top: 31%;
+    left: 10px;
+    transition: all 0.5s;
+}
+
+#toggle-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    top: 30%;
+    left: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.active {
+    transform: rotate(45deg);
 }
 
 @keyframes skill_box {
