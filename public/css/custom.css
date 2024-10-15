@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 
-/* @import url('./responsive.css'); */
 @font-face {
-    font-family: Sahel;
-    src: url('../fonts/sahel-font-v1.0.0-alpha14/Sahel-Black.eot'),
-        url('../fonts/sahel-font-v1.0.0-alpha14/Sahel-Black.ttf') format('truetype'),
-        url('../fonts/sahel-font-v1.0.0-alpha14/Sahel-Black.woff') format('woff');
-    font-weight: bold;
+    font-family: 'kalameh';
+    src: url('../../fonts/kalameh/KalamehWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'kalameh-bold';
+    src: url('../../fonts/kalameh/KalamehWeb-Bold.woff') format('woff');
 }
 
 * {
@@ -18,7 +17,7 @@
 }
 
 body {
-    font-family: 'Vazirmatn';
+    font-family: kalameh;
     text-align: right;
     direction: rtl;
     background-repeat: no-repeat;
@@ -59,7 +58,7 @@ body {
 }
 
 .logo {
-    font-family: "Playwrite CU", cursive;
+    font-family: "Sixtyfour Convergence", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
@@ -101,7 +100,7 @@ body {
 .circle_background {
     background-color: #ffff00;
     border-radius: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
     z-index: -100000;
     position: absolute;
 }
@@ -382,6 +381,11 @@ body {
     }
 }
 
+#menu_hidden {
+    top: 40px;
+    right: 0;
+}
+
 @media screen and (max-width:1024px) {
     .main_header {
         margin-top: 4rem;
@@ -432,6 +436,8 @@ body {
     .myResume {
         padding: 6px 13px;
     }
+
+ 
 
     .welcome_alert {
         width: 330px;
@@ -489,5 +495,9 @@ body {
 
     .social_header_btn button {
         width: 100%;
+    }
+    #myGitHub {
+        width: 100%;
+        text-align: center;
     }
 }
