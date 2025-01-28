@@ -353,6 +353,11 @@ body {
     transform: rotate(45deg);
 }
 
+.contact:hover #contact_me svg {
+    transform: rotate(-90deg);
+}
+
+
 @keyframes skill_box {
     0% {
         transform: rotate(120deg);
@@ -437,7 +442,7 @@ body {
         padding: 6px 13px;
     }
 
- 
+
 
     .welcome_alert {
         width: 330px;
@@ -496,6 +501,7 @@ body {
     .social_header_btn button {
         width: 100%;
     }
+
     #myGitHub {
         width: 100%;
         text-align: center;

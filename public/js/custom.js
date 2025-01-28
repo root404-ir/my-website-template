@@ -14,7 +14,7 @@ function typingHeader() {
 }
 let docTitle = document.title
 window.addEventListener('blur', () => {
-    document.title = "برگرد لطفا🥲"
+    document.title = "😥چرا رفتی؟نکنه بدت اومده از سایتم"
 })
 window.addEventListener('focus', () => {
     document.title = docTitle
