@@ -1,15 +1,4 @@
 $(document).ready(function () {
-    $('.contact').click(() => {
-        $('#menu_hidden').fadeToggle()
-        $('#left_svg').toggleClass()
-        $('#bottom_svg').toggleClass('d-none')
-    })
-
-    $('#menu_hidden').mouseleave(() => {
-        $('#menu_hidden').hide(500)
-        $('#left_svg').toggleClass('d-none')
-        $('#bottom_svg').removeClass('d-none')
-    })
     $('#icon_off').click(function () {
         $('#icon_on').fadeToggle()
         $(this).hide()
@@ -42,3 +31,38 @@ $(document).ready(function () {
         hoverSound.currentTime = 1
     })
 });
+
+const contact = document.querySelector('.contact');
+const menu = document.querySelector('#menu_hidden');
+
+contact.addEventListener('mouseenter', () => {
+    menu.classList.remove('d-none');
+});
+
+contact.addEventListener('mouseleave', () => {
+    setTimeout(() => {
+        if (!menu.matches(':hover')) {
+            menu.classList.add('d-none');
+        }
+    }, 200);
+});
+
+menu.addEventListener('mouseleave', () => {
+    menu.classList.add('d-none');
+});
+
+
+gsap.registerPlugin(ScrollToPlugin)
+document.getElementById('portfolio').addEventListener('click', () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#my-skill' }
+    })
+})
+
+document.getElementById('aboutMe').addEventListener('click', () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: '#about_me_section' }
+    })
+})

@@ -96,30 +96,25 @@
             </div>
             <ul class="hidden lg:flex gap-5">
                 <li id="aboutMe" class="flex items-center gap-2 hvr-underline-reveal ">
-                    <a href="#about_me_section" id="shop"
-                        class="smooth-scroll font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-allhover:text-gray-900  flex items-center gap-2">درباره
+                    <a id="shop"
+                        class="font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-allhover:text-gray-900  flex items-center gap-2">درباره
                         من
                     </a>
                 </li>
-                <li class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#my-skill"
-                        class="smooth-scroll font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400  transition-all hover:text-gray-900 flex items-center gap-2">مهارت
+                <li id="portfolio" class="flex items-center gap-2 hvr-underline-reveal">
+                    <a
+                        class="font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400  transition-all hover:text-gray-900 flex items-center gap-2">مهارت
                         های من
                     </a>
                 </li>
                 <div class="relative">
                     <li class="contact flex items-center gap-2 hvr-underline-reveal">
                         <a href="#" id="contact_me"
-                            class="smooth-scroll font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-all flex items-center gap-2">تماس
+                            class="font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-all flex items-center gap-2">تماس
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 id="bottom_svg" class="bi bi-caret-left" viewBox="0 0 16 16">
                                 <path
                                     d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                id="left_svg" class="bi bi-caret-down d-none" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
                             </svg>
                         </a>
                     </li>
@@ -166,7 +161,7 @@
                     </div>
                 </div>
                 <li id="blog" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a id="blog_open" target="_blank"
+                    <a target="_blank"
                         class="cursor-pointer font-medium hover:text-purple-500 dark:hover:hover:text-yellow-400 transition-all flex items-center gap-2">وبلاگ</a>
                 </li>
             </ul>
@@ -182,13 +177,12 @@
             <ul
                 class="flex flex-col lg:hidden justify-center items-center z-50 gap-5 absolute top-32 right-24 bg-purple-500 dark:bg-yellow-400 text-gray-800 p-5 rounded-lg w-2/4">
                 <li id="aboutMe" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#about_me_section" id="shop"
-                        class="smooth-scroll font-medium transition-all flex items-center gap-2">درباره
+                    <a id="shop" class="font-medium transition-all flex items-center gap-2">درباره
                         من
                     </a>
                 </li>
                 <li id="portfolio" class="flex items-center gap-2 hvr-underline-reveal">
-                    <a href="#my-skill" class="smooth-scroll font-medium transition-all flex items-center gap-2">
+                    <a class="font-medium transition-all flex items-center gap-2">
                         مهارت های من </a>
                 </li>
                 <li class="blog" class="flex items-center gap-2 hvr-underline-reveal">
@@ -393,11 +387,13 @@
     <div id="preloader">
         <div id="status"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="./public/js/jquery-3.7.1.min.js"></script>
     <script src="./public/js/owl.carousel.min.js"></script>
-    <script src="./public/js/jquery.waypoints.min.js"></script>
     <script src="./public/js/progress-bar.js"></script>
     <script src="./public/js/go_top.js"></script>
+    <script src="./public/js/jquery.waypoints.min.js"></script>
     <script src="./public/js/image-carousel.js"></script>
     <script src="./public/js/download_resume.js"></script>
     <script src="./public//js/corner-menu.js"></script>
