@@ -34,24 +34,25 @@ $(document).ready(function () {
 
 const contact = document.querySelector('.contact');
 const menu = document.querySelector('#menu_hidden');
-
+const menuSvg = document.getElementById('menuSvgArrow')
 contact.addEventListener('mouseenter', () => {
     menu.classList.remove('d-none');
+    menuSvg.style.transform = 'rotate(-90deg)'
 });
 
 contact.addEventListener('mouseleave', () => {
     setTimeout(() => {
         if (!menu.matches(':hover')) {
             menu.classList.add('d-none');
+            menuSvg.style.transform = 'rotate(0deg)'
         }
     }, 200);
 });
 
 menu.addEventListener('mouseleave', () => {
     menu.classList.add('d-none');
+    menuSvg.style.transform = 'rotate(0deg)'
 });
-
-
 gsap.registerPlugin(ScrollToPlugin)
 document.getElementById('portfolio').addEventListener('click', () => {
     gsap.to(window, {

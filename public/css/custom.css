@@ -353,11 +353,6 @@ body {
     transform: rotate(45deg);
 }
 
-.contact:hover #contact_me svg {
-    transform: rotate(-90deg);
-}
-
-
 @keyframes skill_box {
     0% {
         transform: rotate(120deg);
